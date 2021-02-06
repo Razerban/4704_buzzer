@@ -102,7 +102,7 @@ U 1 1 601E9244
 P 7500 4300
 F 0 "BZ1" H 7504 3975 50  0000 C CNN
 F 1 "Buzzer" H 7504 4066 50  0000 C CNN
-F 2 "Buzzer_Beeper:Buzzer_15x7.5RM7.6" V 7475 4400 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_D14mm_H7mm_P10mm" V 7475 4400 50  0001 C CNN
 F 3 "~" V 7475 4400 50  0001 C CNN
 	1    7500 4300
 	1    0    0    -1  
@@ -185,7 +185,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3650 4750 3650
 Wire Wire Line
-	4750 3650 4750 2750
+	4750 3650 4750 2950
 $Comp
 L power:GND #PWR0105
 U 1 1 60277DCC
@@ -206,20 +206,16 @@ Wire Wire Line
 Wire Wire Line
 	6450 3850 6850 3850
 Wire Wire Line
-	6850 2750 6850 3850
-Wire Wire Line
-	4750 2750 6850 2750
+	4750 2950 6850 2950
 Connection ~ 6850 3850
 Wire Wire Line
 	4300 4050 5050 4050
 Wire Wire Line
 	5050 4150 4650 4150
 Wire Wire Line
-	4650 4150 4650 2650
+	4650 4150 4650 2850
 Wire Wire Line
-	4650 2650 6750 2650
-Wire Wire Line
-	6750 2650 6750 3650
+	4650 2850 6750 2850
 Wire Wire Line
 	6450 3650 6750 3650
 Wire Wire Line
@@ -276,4 +272,8 @@ Wire Wire Line
 Connection ~ 4000 4200
 Wire Wire Line
 	4000 4200 4000 4150
+Wire Wire Line
+	6850 2950 6850 3850
+Wire Wire Line
+	6750 2850 6750 3650
 $EndSCHEMATC
