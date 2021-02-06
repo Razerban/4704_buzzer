@@ -1,0 +1,7 @@
+Front buzzer:
+  - Height shouldn't exceed 7mm
+  - Diameter shouldn't exceed 22mm
+
+Back buzzer:
+  - Height shouldn't exceed 16,5mm
+  - Diameter shouldn't exceed 30mm
