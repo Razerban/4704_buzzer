@@ -102,7 +102,7 @@ U 1 1 601E9244
 P 7500 4300
 F 0 "BZ1" H 7504 3975 50  0000 C CNN
 F 1 "Buzzer" H 7504 4066 50  0000 C CNN
-F 2 "Buzzer_Beeper:Buzzer_D14mm_H7mm_P10mm" V 7475 4400 50  0001 C CNN
+F 2 "f_buzzer:buzzer_front" V 7475 4400 50  0001 C CNN
 F 3 "~" V 7475 4400 50  0001 C CNN
 	1    7500 4300
 	1    0    0    -1  
