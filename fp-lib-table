@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name f_buzzer)(type KiCad)(uri ${KIPRJMOD}/f_buzzer.pretty)(options "")(descr ""))
+  (lib (name SN74123N)(type KiCad)(uri ${KIPRJMOD}/SN74123N.pretty)(options "")(descr ""))
+)

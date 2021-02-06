@@ -1,4 +1,283 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 601E06C5
+P 6700 5250
+F 0 "R1" H 6770 5296 50  0000 L CNN
+F 1 "330" H 6770 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6630 5250 50  0001 C CNN
+F 3 "~" H 6700 5250 50  0001 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 601E2456
+P 6700 5600
+F 0 "C3" H 6815 5646 50  0000 L CNN
+F 1 "C" H 6815 5555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6738 5450 50  0001 C CNN
+F 3 "~" H 6700 5600 50  0001 C CNN
+	1    6700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 601FA60D
+P 6350 6100
+F 0 "#PWR0101" H 6350 5850 50  0001 C CNN
+F 1 "GND" H 6355 5927 50  0000 C CNN
+F 2 "" H 6350 6100 50  0001 C CNN
+F 3 "" H 6350 6100 50  0001 C CNN
+	1    6350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 601FB5DA
+P 6350 4500
+F 0 "#PWR0102" H 6350 4350 50  0001 C CNN
+F 1 "VCC" H 6365 4673 50  0000 C CNN
+F 2 "" H 6350 4500 50  0001 C CNN
+F 3 "" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4600 6350 4600
+Wire Wire Line
+	6350 4600 6350 4500
+$Comp
+L SN74123N:SN74123N U1
+U 1 1 601F7510
+P 5600 5300
+F 0 "U1" H 5600 6270 50  0000 C CNN
+F 1 "SN74123N" H 5600 6179 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 5600 5300 50  0001 L BNN
+F 3 "" H 5600 5300 50  0001 L BNN
+	1    5600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6000 6350 6000
+Wire Wire Line
+	6350 6000 6350 6100
+$Comp
+L power:GND #PWR0103
+U 1 1 60206601
+P 4150 5350
+F 0 "#PWR0103" H 4150 5100 50  0001 C CNN
+F 1 "GND" H 4155 5177 50  0000 C CNN
+F 2 "" H 4150 5350 50  0001 C CNN
+F 3 "" H 4150 5350 50  0001 C CNN
+	1    4150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5300 4150 5350
+Wire Wire Line
+	6700 5450 6700 5400
+Wire Wire Line
+	6700 5750 6700 6000
+Wire Wire Line
+	6700 6000 6350 6000
+Connection ~ 6350 6000
+$Comp
+L Device:Buzzer BZ1
+U 1 1 601E9244
+P 7350 5550
+F 0 "BZ1" H 7354 5225 50  0000 C CNN
+F 1 "Buzzer" H 7354 5316 50  0000 C CNN
+F 2 "Buzzer_Beeper:Buzzer_15x7.5RM7.6" V 7325 5650 50  0001 C CNN
+F 3 "~" V 7325 5650 50  0001 C CNN
+	1    7350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5450 6700 5450
+Connection ~ 6700 5450
+Wire Wire Line
+	7150 5450 7200 5450
+Wire Wire Line
+	6300 5000 7200 5000
+Wire Wire Line
+	7200 5000 7200 5450
+$Comp
+L Device:R_POT RV1
+U 1 1 601EA5FF
+P 7000 5450
+F 0 "RV1" V 6793 5450 50  0000 C CNN
+F 1 "20K" V 6884 5450 50  0000 C CNN
+F 2 "f_buzzer:Potentiometer_Bourns_3345P_Horizontal" H 7000 5450 50  0001 C CNN
+F 3 "~" H 7000 5450 50  0001 C CNN
+	1    7000 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 5450 7200 5450
+Connection ~ 7200 5450
+Wire Wire Line
+	7250 5650 7000 5650
+Wire Wire Line
+	7000 5650 7000 5600
+$Comp
+L Device:C C1
+U 1 1 601E1853
+P 4350 5700
+F 0 "C1" H 4465 5746 50  0000 L CNN
+F 1 "C" H 4465 5655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4388 5550 50  0001 C CNN
+F 3 "~" H 4350 5700 50  0001 C CNN
+	1    4350 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 601E0BA9
+P 3650 4400
+F 0 "R3" V 3443 4400 50  0000 C CNN
+F 1 "27K" V 3534 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 6020033E
+P 3850 3950
+F 0 "#PWR0104" H 3850 3800 50  0001 C CNN
+F 1 "VCC" H 3865 4123 50  0000 C CNN
+F 2 "" H 3850 3950 50  0001 C CNN
+F 3 "" H 3850 3950 50  0001 C CNN
+	1    3850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 601E1E28
+P 4050 4900
+F 0 "C2" H 4165 4946 50  0000 L CNN
+F 1 "C" H 4165 4855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4088 4750 50  0001 C CNN
+F 3 "~" H 4050 4900 50  0001 C CNN
+	1    4050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4400 3850 4400
+Wire Wire Line
+	3850 3950 3850 4400
+Connection ~ 3850 4400
+Wire Wire Line
+	3850 4400 3800 4400
+Wire Wire Line
+	3500 4400 3350 4400
+Wire Wire Line
+	4900 5700 4750 5700
+Wire Wire Line
+	4750 5700 4750 6250
+Wire Wire Line
+	4550 5200 4900 5200
+Wire Wire Line
+	4350 4400 4200 4400
+Text Label 4550 5200 0    50   ~ 0
+DVR
+Text Label 4750 6250 0    50   ~ 0
+DVR
+Wire Wire Line
+	4050 5100 4050 5050
+Wire Wire Line
+	4050 5100 4900 5100
+Wire Wire Line
+	4900 5000 4350 5000
+Wire Wire Line
+	4350 5000 4350 4700
+Wire Wire Line
+	4350 4700 4050 4700
+Wire Wire Line
+	4050 4700 4050 4750
+Connection ~ 4350 4700
+Wire Wire Line
+	4350 4700 4350 4400
+Wire Wire Line
+	3350 5850 4350 5850
+Wire Wire Line
+	4900 5500 4350 5500
+Wire Wire Line
+	4350 5500 4350 5550
+Wire Wire Line
+	4900 5600 4600 5600
+Wire Wire Line
+	4600 5600 4600 5850
+Wire Wire Line
+	4600 5850 4350 5850
+Connection ~ 4350 5850
+Wire Wire Line
+	3350 4400 3350 5850
+Wire Wire Line
+	4900 4900 4600 4900
+Wire Wire Line
+	4600 4900 4600 4000
+$Comp
+L power:GND #PWR0105
+U 1 1 60277DCC
+P 4700 4650
+F 0 "#PWR0105" H 4700 4400 50  0001 C CNN
+F 1 "GND" H 4705 4477 50  0000 C CNN
+F 2 "" H 4700 4650 50  0001 C CNN
+F 3 "" H 4700 4650 50  0001 C CNN
+	1    4700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4800 4900 4550
+Wire Wire Line
+	4900 4550 4700 4550
+Wire Wire Line
+	4700 4550 4700 4650
+Wire Wire Line
+	6300 5100 6700 5100
+Wire Wire Line
+	6700 4000 6700 5100
+Wire Wire Line
+	4600 4000 6700 4000
+Connection ~ 6700 5100
+Wire Wire Line
+	4150 5300 4900 5300
+Wire Wire Line
+	4900 5400 4500 5400
+Wire Wire Line
+	4500 5400 4500 3900
+Wire Wire Line
+	4500 3900 6600 3900
+Wire Wire Line
+	6600 3900 6600 4900
+Wire Wire Line
+	6300 4900 6600 4900
+$Comp
+L Device:R R2
+U 1 1 601E1374
+P 4050 4400
+F 0 "R2" V 3843 4400 50  0000 C CNN
+F 1 "27K" V 3934 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 4400 50  0001 C CNN
+F 3 "~" H 4050 4400 50  0001 C CNN
+	1    4050 4400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
