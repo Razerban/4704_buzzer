@@ -97,14 +97,14 @@ Wire Wire Line
 	6850 4750 6500 4750
 Connection ~ 6500 4750
 $Comp
-L Device:Buzzer BZ1
+L Device:Buzzer BZ2
 U 1 1 601E9244
-P 7500 4300
-F 0 "BZ1" H 7504 3975 50  0000 C CNN
-F 1 "Buzzer" H 7504 4066 50  0000 C CNN
-F 2 "f_buzzer:buzzer_front" V 7475 4400 50  0001 C CNN
-F 3 "~" V 7475 4400 50  0001 C CNN
-	1    7500 4300
+P 7750 4300
+F 0 "BZ2" H 7754 3975 50  0000 C CNN
+F 1 "Buzzer" H 7754 4066 50  0000 C CNN
+F 2 "f_buzzer:buzzer_front" V 7725 4400 50  0001 C CNN
+F 3 "~" V 7725 4400 50  0001 C CNN
+	1    7750 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -276,4 +276,37 @@ Wire Wire Line
 	6850 2950 6850 3850
 Wire Wire Line
 	6750 2850 6750 3650
+Wire Wire Line
+	7400 4200 7400 4050
+Wire Wire Line
+	7400 4050 7650 4050
+Wire Wire Line
+	8050 4050 8050 4200
+Wire Wire Line
+	7650 4200 7650 4050
+Connection ~ 7650 4050
+Wire Wire Line
+	7650 4050 8050 4050
+Wire Wire Line
+	7400 4400 7400 4550
+Wire Wire Line
+	7400 4550 7650 4550
+Wire Wire Line
+	8050 4550 8050 4400
+Wire Wire Line
+	7650 4400 7650 4550
+Connection ~ 7650 4550
+Wire Wire Line
+	7650 4550 8050 4550
+$Comp
+L Device:Buzzer BZ1
+U 1 1 602085CD
+P 8150 4300
+F 0 "BZ1" H 8302 4329 50  0000 L CNN
+F 1 "Buzzer" H 8302 4238 50  0000 L CNN
+F 2 "f_buzzer:buzzer_bottom" V 8125 4400 50  0001 C CNN
+F 3 "~" V 8125 4400 50  0001 C CNN
+	1    8150 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
