@@ -1,4 +1,5 @@
-(module Potentiometer_Bourns_3345P_Horizontal (layer F.Cu) (tedit 601D9D73)
+(module Potentiometer_Bourns_3345P_Horizontal (layer F.Cu) (tedit 601E9AD6)
+  (descr "Potentiometer, horizontal, Bourns 3345P, https://www.mouser.fr/datasheet/2/54/3345-776748.pdf")
   (fp_text reference REF** (at 0.05 -7.23) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -13,7 +14,7 @@
   (pad 1 thru_hole circle (at 0 -2.54) (size 1.524 1.524) (drill 0.8) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at -2.54 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 2.54 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (model "${KIPRJMOD}/Bourne 3345P - T.stp"
+  (model "${KIPRJMOD}/f_buzzer.pretty/Bourne 3345P - T.stp"
     (offset (xyz 0 0 6))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 180))
