@@ -1,5 +1,5 @@
 # 4704_buzzer
-A recreation of the IBM 4704 Keyboard buzzer board
+A recreation of the IBM 4704 Series buzzer board
 
 ![](images/top_view_no_buzzers.png)
 ![](images/bottom_view_no_buzzers.png)
@@ -12,21 +12,15 @@ However, due to the availability and different shapes and dimensions (and the co
 So I decided to add a second footprint on the bottom of the PCB that would allow to take advantage of the space available underneath the board to house a bigger buzzer.
 
 The maximum dimensions of the buzzers that would be compatible with this board are:
-- BZ1 (Buzzer installed on the bottom of the PCB):
-  Length: 30mm
-  Width:  30mm
-  Height: 16.5mm
+- BZ1 (Buzzer installed on the bottom of the PCB): L=30mm, W=30mm, H=16.5mm
 
 ![](images/bottom_buzzer.png)
 
-- BZ2 (Buzzer installed on the top of the PCB):
-  Length: 22mm
-  Width:  22mm
-  Height: 7mm
+- BZ2 (Buzzer installed on the top of the PCB): L=22mm, W=22mm, H=7mm
 
 ![](images/top_buzzer.png)
 
-These dimensions are for 1.6mm thick PCBs.
+These dimensions work for 1.6mm thick PCB boards.
 While I don't recommend this, you could choose a less thick PCB when ordering the board from your PCB Fabrication Manufacturer.
 This would let you choose a bigger (height wise) buzzer to mount on the top or bottom of the PCB, however, beware that the PCB might not be able to sit correctly inside the case.
 
