@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74123N
+D RETRIGGERABLE MONOSTABLE MULTIVIBRATORS
+F https://www.ti.com/lit/ds/symlink/sn74123.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1613124549004&ref_url=https%253A%252F%252Fwww.mouser.com%252F
+$ENDCMP
+#
+$CMP SN74LS123DRG4
+D RETRIGGERABLE MONOSTABLE MULTIVIBRATORS
+F https://www.ti.com/lit/ds/symlink/sn74123.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1613124549004&ref_url=https%253A%252F%252Fwww.mouser.com%252F
+$ENDCMP
+#
+#End Doc Library
