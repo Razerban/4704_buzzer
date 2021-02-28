@@ -36,32 +36,6 @@ F 3 "~" H 6850 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
-U 1 1 601FA60D
-P 6500 4850
-F 0 "#PWR0101" H 6500 4600 50  0001 C CNN
-F 1 "GND" H 6505 4677 50  0000 C CNN
-F 2 "" H 6500 4850 50  0001 C CNN
-F 3 "" H 6500 4850 50  0001 C CNN
-	1    6500 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0102
-U 1 1 601FB5DA
-P 6500 3250
-F 0 "#PWR0102" H 6500 3100 50  0001 C CNN
-F 1 "VCC" H 6515 3423 50  0000 C CNN
-F 2 "" H 6500 3250 50  0001 C CNN
-F 3 "" H 6500 3250 50  0001 C CNN
-	1    6500 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 3350 6500 3350
-Wire Wire Line
-	6500 3350 6500 3250
-$Comp
 L SN74123N:SN74123N U1
 U 1 1 601F7510
 P 5750 4050
@@ -72,10 +46,6 @@ F 3 "" H 5750 4050 50  0001 L BNN
 	1    5750 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6450 4750 6500 4750
-Wire Wire Line
-	6500 4750 6500 4850
 $Comp
 L power:GND #PWR0103
 U 1 1 60206601
@@ -94,24 +64,8 @@ Wire Wire Line
 Wire Wire Line
 	6850 4500 6850 4750
 Wire Wire Line
-	6850 4750 6500 4750
-Connection ~ 6500 4750
-$Comp
-L Device:Buzzer BZ2
-U 1 1 601E9244
-P 7750 4300
-F 0 "BZ2" H 7754 3975 50  0000 C CNN
-F 1 "Buzzer" H 7754 4066 50  0000 C CNN
-F 2 "f_buzzer:buzzer_front" V 7725 4400 50  0001 C CNN
-F 3 "~" V 7725 4400 50  0001 C CNN
-	1    7750 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	7000 4200 6850 4200
 Connection ~ 6850 4200
-Wire Wire Line
-	7300 4200 7350 4200
 Wire Wire Line
 	6450 3750 7350 3750
 Wire Wire Line
@@ -125,15 +79,8 @@ F 1 "20K" V 7034 4200 50  0000 C CNN
 F 2 "f_buzzer:Potentiometer_Bourns_3345P_Horizontal" H 7150 4200 50  0001 C CNN
 F 3 "~" H 7150 4200 50  0001 C CNN
 	1    7150 4200
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7400 4200 7350 4200
-Connection ~ 7350 4200
-Wire Wire Line
-	7400 4400 7150 4400
-Wire Wire Line
-	7150 4400 7150 4350
 $Comp
 L Device:C C1
 U 1 1 601E1853
@@ -159,12 +106,8 @@ $EndComp
 Wire Wire Line
 	5050 4450 4900 4450
 Wire Wire Line
-	4900 4450 4900 5000
-Wire Wire Line
 	4700 3950 5050 3950
 Text Label 4700 3950 0    50   ~ 0
-DVR
-Text Label 4900 5000 0    50   ~ 0
 DVR
 Wire Wire Line
 	4200 3850 4200 3800
@@ -186,23 +129,8 @@ Wire Wire Line
 	5050 3650 4750 3650
 Wire Wire Line
 	4750 3650 4750 2950
-$Comp
-L power:GND #PWR0105
-U 1 1 60277DCC
-P 4850 3400
-F 0 "#PWR0105" H 4850 3150 50  0001 C CNN
-F 1 "GND" H 4855 3227 50  0000 C CNN
-F 2 "" H 4850 3400 50  0001 C CNN
-F 3 "" H 4850 3400 50  0001 C CNN
-	1    4850 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 3550 5050 3300
-Wire Wire Line
-	5050 3300 4850 3300
-Wire Wire Line
-	4850 3300 4850 3400
 Wire Wire Line
 	6450 3850 6850 3850
 Wire Wire Line
@@ -276,37 +204,110 @@ Wire Wire Line
 	6850 2950 6850 3850
 Wire Wire Line
 	6750 2850 6750 3650
-Wire Wire Line
-	7400 4200 7400 4050
-Wire Wire Line
-	7400 4050 7650 4050
-Wire Wire Line
-	8050 4050 8050 4200
-Wire Wire Line
-	7650 4200 7650 4050
-Connection ~ 7650 4050
-Wire Wire Line
-	7650 4050 8050 4050
-Wire Wire Line
-	7400 4400 7400 4550
-Wire Wire Line
-	7400 4550 7650 4550
-Wire Wire Line
-	8050 4550 8050 4400
-Wire Wire Line
-	7650 4400 7650 4550
-Connection ~ 7650 4550
-Wire Wire Line
-	7650 4550 8050 4550
 $Comp
 L Device:Buzzer BZ1
 U 1 1 602085CD
-P 8150 4300
-F 0 "BZ1" H 8302 4329 50  0000 L CNN
-F 1 "Buzzer" H 8302 4238 50  0000 L CNN
-F 2 "f_buzzer:buzzer_bottom" V 8125 4400 50  0001 C CNN
-F 3 "~" V 8125 4400 50  0001 C CNN
-	1    8150 4300
+P 7681 4003
+F 0 "BZ1" H 7833 4032 50  0000 L CNN
+F 1 "Buzzer" H 7833 3941 50  0000 L CNN
+F 2 "f_buzzer:buzzer_bottom" V 7656 4103 50  0001 C CNN
+F 3 "~" V 7656 4103 50  0001 C CNN
+	1    7681 4003
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Buzzer BZ2
+U 1 1 601E9244
+P 8082 4002
+F 0 "BZ2" H 8086 3677 50  0000 C CNN
+F 1 "Buzzer" H 8086 3768 50  0000 C CNN
+F 2 "f_buzzer:buzzer_front" V 8057 4102 50  0001 C CNN
+F 3 "~" V 8057 4102 50  0001 C CNN
+	1    8082 4002
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7581 4200 7581 4103
+Wire Wire Line
+	7300 4200 7350 4200
+Connection ~ 7350 4200
+Wire Wire Line
+	7981 4200 7981 4103
+Wire Wire Line
+	7350 4200 7581 4200
+Connection ~ 7581 4200
+Wire Wire Line
+	7581 4200 7981 4200
+Wire Wire Line
+	7150 3799 7150 4050
+Wire Wire Line
+	7581 3797 7581 3799
+Wire Wire Line
+	7982 3902 7982 3799
+Wire Wire Line
+	7150 3799 7581 3799
+Connection ~ 7581 3799
+Wire Wire Line
+	7581 3799 7581 3903
+Wire Wire Line
+	7581 3799 7982 3799
+Wire Wire Line
+	6448 3349 6448 3350
+Wire Wire Line
+	6448 3350 6446 3350
+Wire Wire Line
+	4900 4450 4900 5309
+Wire Wire Line
+	6450 4750 6850 4750
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 60418CE9
+P 9011 4013
+F 0 "J1" H 9091 4055 50  0000 L CNN
+F 1 "Conn_01x03" H 9091 3964 50  0000 L CNN
+F 2 "f_buzzer:PinHeader_1x03_P2.54mm_Horizontal" H 9011 4013 50  0001 C CNN
+F 3 "~" H 9011 4013 50  0001 C CNN
+	1    9011 4013
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60439457
+P 9006 3302
+F 0 "#PWR?" H 9006 3152 50  0001 C CNN
+F 1 "VCC" H 9021 3475 50  0000 C CNN
+F 2 "" H 9006 3302 50  0001 C CNN
+F 3 "" H 9006 3302 50  0001 C CNN
+	1    9006 3302
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60439CFE
+P 9013 3484
+F 0 "#PWR?" H 9013 3234 50  0001 C CNN
+F 1 "GND" H 9018 3311 50  0000 C CNN
+F 2 "" H 9013 3484 50  0001 C CNN
+F 3 "" H 9013 3484 50  0001 C CNN
+	1    9013 3484
+	1    0    0    -1  
+$EndComp
+Text GLabel 9013 3484 0    50   Input ~ 0
+GND
+Text GLabel 9006 3302 0    50   Input ~ 0
+VCC
+Text GLabel 8811 3913 0    50   Input ~ 0
+VCC
+Text GLabel 8811 4113 0    50   Input ~ 0
+GND
+Text GLabel 8811 4013 0    50   Input ~ 0
+DVR
+Text GLabel 4900 5309 0    50   Input ~ 0
+DVR
+Text GLabel 6450 3351 2    50   Input ~ 0
+VCC
+Text GLabel 6850 4748 2    50   Input ~ 0
+GND
+Text GLabel 5050 3300 0    50   Input ~ 0
+GND
 $EndSCHEMATC

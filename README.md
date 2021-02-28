@@ -35,9 +35,9 @@ This would let you choose a bigger (height wise) buzzer to mount on the top or b
 - C1: 20nF
 - C2: 20nF
 - C3: 7nF
-- R1: 27K
+- R1: 330
 - R2: 27K
-- R3: 330
+- R3: 27K
 - RV1: 20K (I recommend Bourns 3345P-1-203-T)
 
 # License
